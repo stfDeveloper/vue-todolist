@@ -18,7 +18,7 @@
         <div class="input">
             <input v-model="todoInput" @keyup.enter="toDos.push(todoInput)" type="text" placeholder ="New ToDo">
         </div>
-        <div v-for="item in toDos" class="toDo">{{item}}
+        <div v-for="item in toDos" class="toDo">{{item.task}}
             <div style="float: right;display: inline;cursor: pointer;" @click="removeToDo(index)" class="close">X</div>
         </div>
 
