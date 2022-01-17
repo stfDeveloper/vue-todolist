@@ -17,8 +17,12 @@
     <main id="app" class="container">
         <div class="input">
             <input v-model="todoInput" @keyup.enter="toDos.push(todoInput)" type="text" placeholder ="New ToDo">
+            <button @click="toDos.push(todoInput)">Add</button>
         </div>
-        <div v-for="item in toDos" class="toDo">{{item.task}}
+        <div v-for="item in toDos" class="toDo">
+            <p v-on:click="notDone = !notDone" v-bind:class="{ notDone: notDone }" style="display: inline; cursor: pointer;">
+                {{item}}
+            </p>
             <div style="float: right;display: inline;cursor: pointer;" @click="removeToDo(index)" class="close">X</div>
         </div>
 

@@ -1,37 +1,19 @@
 let app = new Vue({
-
     el: "#app",
+    
     data : {
+        notDone:false,
         toDos : [
-            {
-                task:"fai i compiti",
-                done: true,
-
-            },
-            {
-                task:"chiama quella persona",
-                done: true,
-            },
-            {
-                task:"fai la spesa",
-                done: true,
-            },
-            {
-                task:"leggi il libro",
-                done: true,
-            },
-    ]
+            "fai i compiti",
+        ]
     },
     methods: {
         removeToDo(index) {
           this.toDos.splice(index, 1);
         },
-        toggle(){
-            this.done= !done
-            console
-        },
-        
-      }
+        line: function(){
+            this.notDone = !this.notDone
+        }
 
-      
+      }
 })
