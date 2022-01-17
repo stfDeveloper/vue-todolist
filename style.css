@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+}
+.container{
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.466);
+    width: 600px;
+    border-radius:20px ;
+    border-bottom: 2px solid rgb(139, 123, 123);
+}
+.input{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.toDo{
+    padding: 5px;
+    border-bottom: 1px solid rgb(185, 166, 166);
+    background-color: rgba(0, 0, 0, 0.096);
+}
